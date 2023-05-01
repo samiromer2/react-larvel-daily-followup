@@ -1,0 +1,45 @@
+-all the npm's
+npm init vite@latest
+npm install
+npm run dev 
+npm install -D tailwindcss postcss autoprefixer 
+npx tailwindcss init
+npm install -D eslint eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
+npm run lint
+npm install react-router-dom --save
+npm install prop-types --save
+npm install axios --save
+npm install react-use-storage --save
+
+
+
+npm init vite@latest
+
+We have selected the following options.
+✔ Project name: … React-Car-Parking-App-Demo
+✔ Select a framework: › React
+✔ Select a variant: › JavaScript
+ 
+Scaffolding project in ./React-Car-Parking-App-Demo...
+
+
+A new tailwind.config.cjs file will be created in the project root directory.
+
+Now update this file to:
+
+const colors = require('tailwindcss/colors')
+ 
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./src/**/*.jsx'],
+  theme: {
+    extend: { colors },
+  },
+  plugins: [],
+}
+
+
+
+    By default react doesn't have included router so we need to install it manually with this command.
+
+npm install react-router-dom --save
